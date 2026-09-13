@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Souleymane — Consultant Digital & Chef de Projet Web | Portfolio & CV</title>
+  <meta name="description" content="CV en ligne et portfolio de Souleymane, Consultant Digital, Chef de Projet Web & Spécialiste de la transformation numérique, Vibe Coding, création de contenu et e-commerce.">
+  <meta name="keywords" content="Souleymane, Consultant Digital, Chef de Projet Web, Vibe Coding, Portfolio, CV, Communication Digitale, Sonatel Orange, BravoPromo, E-commerce, SEO">
+  <meta name="author" content="Souleymane">
+  
+  <!-- Open Graph / Meta Réseaux Sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Souleymane — Consultant Digital & Chef de Projet Web">
+  <meta property="og:description" content="Découvrez le profil professionnel, les compétences et les réalisations de Souleymane.">
+  
+  <!-- Polices Google Premium -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome pour les icônes de prestige -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- Curseur Lumineux Interactif (Desktop) -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Fond Animé : Particules & Grille Cyber-Luxe -->
+  <canvas id="ambientCanvas"></canvas>
+  <div class="ambient-grid-overlay"></div>
+
+  <!-- Barre de Navigation Flottante Haute Précision -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#top" class="brand-logo" id="brandLogo">
+        <div class="logo-symbol">
+          <span>S</span>
+          <div class="logo-dot"></div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Souleymane</span>
+          <span class="logo-tag">Digital Consultant</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> <span>À Propos</span></a>
+        <a href="#experiences" class="nav-link"><i class="fa-solid fa-briefcase"></i> <span>Expériences</span></a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> <span>Compétences</span></a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> <span>Formation</span></a>
+        <a href="#services" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Services</span></a>
+        <a href="#contact" class="nav-link nav-cta"><i class="fa-solid fa-paper-plane"></i> <span>Contact</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-action-icon" id="printCvBtn" title="Télécharger / Imprimer en version PDF">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span class="btn-tooltip">Imprimer CV</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Flottant -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="brand-logo">
+        <div class="logo-symbol small">
+          <span>S</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Souleymane</span>
+        </div>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Fermer le menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-menu-content">
+      <a href="#about" class="mobile-link"><i class="fa-regular fa-user"></i> À Propos</a>
+      <a href="#experiences" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Expériences</a>
+      <a href="#skills" class="mobile-link"><i class="fa-solid fa-layer-group"></i> Compétences</a>
+      <a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Formation</a>
+      <a href="#services" class="mobile-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Services</a>
+      <a href="#contact" class="mobile-link mobile-btn-contact"><i class="fa-solid fa-paper-plane"></i> Me Contacter</a>
+    </div>
+    <div class="mobile-menu-socials">
+      <span class="mobile-socials-title">Retrouvez-moi sur :</span>
+      <div class="mobile-social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link whatsapp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-indicator"></span>
+            <span>Disponible pour Projets & Conseil Stratégique</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-sub">Consultant Digital & Chef de Projet Web</span>
+            <span class="gradient-text">Créateur de Valeur</span> & Solutions Numériques
+          </h1>
+
+          <p class="hero-description">
+            Alliant une rigueur scientifique, une double expertise universitaire en communication digitale & multimédia, et une solide expérience terrain et e-commerce. Je propulse les entreprises vers le succès numérique par le <strong>Vibe Coding</strong>, la stratégie de contenu et la création de produits digitaux à fort impact.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <span>Discuter d'un Projet</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#experiences" class="btn btn-glass">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explorer le Parcours</span>
+            </a>
+            <button class="btn btn-outline" id="heroPrintBtn">
+              <i class="fa-solid fa-download"></i>
+              <span>Exporter CV</span>
+            </button>
+          </div>
+
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Ans chez Orange Sonatel</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Orientation ROI & Impact</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-label">Diplômes Clés (Bac S à Master)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-card glass-panel">
+              <div class="avatar-header">
+                <div class="status-pill"><i class="fa-solid fa-circle-check"></i> Profil Vérifié</div>
+                <div class="tech-tag">VIBE CODING & TECH</div>
+              </div>
+
+              <div class="avatar-portrait">
+                <div class="portrait-placeholder">
+                  <span class="portrait-initials">S</span>
+                  <div class="orbit-particle p1"></div>
+                  <div class="orbit-particle p2"></div>
+                </div>
+              </div>
+
+              <div class="avatar-info">
+                <h3>Souleymane</h3>
+                <p class="role-text">Consultant Digital & Vibe Coder</p>
+                <div class="location-badge">
+                  <i class="fa-solid fa-location-dot"></i> International & Remote
+                </div>
+              </div>
+
+              <div class="quick-skills-tags">
+                <span><i class="fa-solid fa-code"></i> Web Conception</span>
+                <span><i class="fa-solid fa-chart-line"></i> SEO & E-commerce</span>
+                <span><i class="fa-solid fa-book-open"></i> Digital Products</span>
+                <span><i class="fa-solid fa-bolt"></i> Digital Strategy</span>
+              </div>
+
+              <div class="card-footer-action">
+                <a href="#contact" class="btn-micro">
+                  <span>Prendre Contact</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== À PROPOS / BIO ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge"><i class="fa-regular fa-id-card"></i> PROFIL & VISION</div>
+          <h2 class="section-title">À Propos de <span class="gradient-text">Moi</span></h2>
+          <p class="section-subtitle">Une vision transversale qui unit méthode scientifique, marketing de terrain et technologies web innovantes.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel highlight-box">
+            <div class="card-icon-header">
+              <div class="icon-circle"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>Mon Histoire & Philosophie</h3>
+            </div>
+            <p class="lead-text">
+              Titulaire d’un <strong>Baccalauréat Scientifique (S2)</strong> obtenu en 2018, puis d’une <strong>Licence en communication digitale</strong> en 2021 et d’une <strong>Maîtrise en multimédia et communication digitale</strong> en 2022, mon profil allie l'esprit d'analyse logique et l'ingéniosité créative.
+            </p>
+            <p>
+              J’ai forgé mon expertise pratique sur des fronts exigeants : en tant que <strong>Content Manager & rédacteur web e-commerce pour BravoPromo.fr</strong> (maîtrise du copywriting persuasif, du référencement naturel et de la conversion), ainsi qu’en qualité d’<strong>agent marketing terrain pour Sonatel Orange pendant 3 années consécutives</strong> (compréhension intime du consommateur et force de persuasion).
+            </p>
+            <p>
+              Aujourd’hui, j’accompagne les organisations dans leur <strong>transformation digitale intégrale</strong>. Parallèlement, je crée et propulse des projets numériques novateurs grâce au <em>Vibe Coding</em>, à la conception de sites web ultra-dynamiques, et à la monétisation d'e-books et de produits d'information à forte valeur.
+            </p>
+
+            <div class="about-highlights-list">
+              <div class="hl-item">
+                <i class="fa-solid fa-check-double"></i>
+                <div>
+                  <strong>Agilité & Vibe Coding :</strong>
+                  <span>Capacité à prototyper et déployer des plateformes web performantes avec une vélocité sans précédent.</span>
+                </div>
+              </div>
+              <div class="hl-item">
+                <i class="fa-solid fa-check-double"></i>
+                <div>
+                  <strong>Vision Commerciale & Terrain :</strong>
+                  <span>3 ans d'immersion marketing chez le leader télécom Sonatel Orange.</span>
+                </div>
+              </div>
+              <div class="hl-item">
+                <i class="fa-solid fa-check-double"></i>
+                <div>
+                  <strong>Production de Contenu Haute Conversion :</strong>
+                  <span>Expertise e-commerce, structuration d'e-books et stratégie éditoriale optimisée.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-side-cards">
+            <div class="side-card glass-panel">
+              <div class="side-card-icon"><i class="fa-solid fa-rocket"></i></div>
+              <h4>Mission Principale</h4>
+              <p>Démocratiser la digitalisation de pointe pour les marques et professionnels en déployant des solutions web esthétiques, automatisées et orientées résultats.</p>
+            </div>
+
+            <div class="side-card glass-panel">
+              <div class="side-card-icon"><i class="fa-solid fa-dna"></i></div>
+              <h4>ADN Scientifique & Digital</h4>
+              <p>Rigueur méthodologique (Bac S2), complétée par une expertise de niveau Master (Multimédia & Com Digitale) pour des choix architecturaux et stratégiques éprouvés.</p>
+            </div>
+
+            <div class="side-card glass-panel action-box">
+              <div class="side-card-icon gold"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Prêt à Collaborer ?</h4>
+              <p>Vous avez une idée de site, un besoin d'accompagnement ou un produit à digitaliser ?</p>
+              <a href="#contact" class="btn-link">Prendre rendez-vous <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPÉRIENCES PROFESSIONNELLES ==================== -->
+    <section class="section experiences-section" id="experiences">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge"><i class="fa-solid fa-timeline"></i> PARCOURS PROFESSIONNEL</div>
+          <h2 class="section-title">Expériences <span class="gradient-text">Clés</span></h2>
+          <p class="section-subtitle">Un historique éprouvé entre gestion de projets, stratégie d'acquisition et déploiement digital.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-card glass-panel featured">
+            <div class="timeline-header">
+              <div class="timeline-tag current">2023 — Aujourd'hui</div>
+              <div class="timeline-role-badge">Projet & Conseil</div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title-group">
+                <div class="role-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                  <h3 class="role-title">Consultant Digital & Créateur de Solutions Web</h3>
+                  <h4 class="company-name">Indépendant & Projets Digitaux (Vibe Coding)</h4>
+                </div>
+              </div>
+              <p class="role-desc">
+                Accompagnement d'entreprises et créateurs dans la conception de leur présence en ligne et l'optimisation de leur empreinte numérique.
+              </p>
+              <ul class="role-achievements">
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Conception & Vibe Coding :</strong> Développement accéléré de sites vitrines, landing pages captivantes et interfaces web interactives haute-fidélité.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Produits Digitaux & E-books :</strong> Rédaction, conception graphique et mise en place de tunnels de vente automatisés pour des e-books et ressources numériques.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Conseil Stratégique :</strong> Audit de digitalisation, optimisation des parcours clients et intégration d'outils modernes pour booster l'engagement.</li>
+              </ul>
+              <div class="tags-group">
+                <span class="badge-tag">Vibe Coding</span>
+                <span class="badge-tag">Conception Web</span>
+                <span class="badge-tag">Digital Products</span>
+                <span class="badge-tag">Stratégie Numérique</span>
+                <span class="badge-tag">Copywriting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <div class="timeline-tag">E-Commerce & Média</div>
+              <div class="timeline-role-badge">Content & SEO</div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title-group">
+                <div class="role-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <div>
+                  <h3 class="role-title">Content Manager & Rédacteur Web E-Commerce</h3>
+                  <h4 class="company-name">BravoPromo.fr</h4>
+                </div>
+              </div>
+              <p class="role-desc">
+                Gestion éditoriale et optimisation SEO pour une plateforme e-commerce et de bons plans à fort trafic.
+              </p>
+              <ul class="role-achievements">
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Stratégie Éditoriale & SEO :</strong> Rédaction d'articles optimisés, de fiches produits et de pages de conversion pour maximiser le positionnement organique Google.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Copywriting Promotionnel :</strong> Élaboration de messages percutants et attractifs incitant à l'action d'achat et au taux de clic.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Veille & E-Commerce :</strong> Analyse des tendances du marché des offres en ligne et adaptation dynamique du contenu commercial.</li>
+              </ul>
+              <div class="tags-group">
+                <span class="badge-tag">SEO Avancé</span>
+                <span class="badge-tag">E-Commerce</span>
+                <span class="badge-tag">Content Management</span>
+                <span class="badge-tag">Copywriting</span>
+                <span class="badge-tag">CMS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <div class="timeline-tag">3 Ans d'Expérience</div>
+              <div class="timeline-role-badge">Marketing & Télécom</div>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title-group">
+                <div class="role-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                <div>
+                  <h3 class="role-title">Agent Marketing Terrain</h3>
+                  <h4 class="company-name">Sonatel Orange</h4>
+                </div>
+              </div>
+              <p class="role-desc">
+                Déploiement d'opérations marketing terrain, promotion des solutions télécoms & services digitaux auprès des particuliers et professionnels.
+              </p>
+              <ul class="role-achievements">
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Acquisition & Sensibilisation :</strong> Promotion active des offres voix, data, Orange Money et nouveaux services numériques de l'opérateur leader.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Négociation & Relation Client :</strong> Contact direct avec les utilisateurs finaux, identification des besoins et fidélisation client.</li>
+                <li><i class="fa-solid fa-circle-check"></i> <strong>Remontée d'Insights :</strong> Analyse des retours terrain pour ajuster les campagnes marketing et optimiser l'expérience utilisateur.</li>
+              </ul>
+              <div class="tags-group">
+                <span class="badge-tag">Marketing Terrain</span>
+                <span class="badge-tag">Sonatel Orange</span>
+                <span class="badge-tag">Relation Client</span>
+                <span class="badge-tag">Vente Directe</span>
+                <span class="badge-tag">Déploiement Stratégique</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMPÉTENCES ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge"><i class="fa-solid fa-gears"></i> SAVOIR-FAIRE & STACK</div>
+          <h2 class="section-title">Compétences <span class="gradient-text">Clés</span></h2>
+          <p class="section-subtitle">Un éventail complet combinant stratégie digitale, technologies modernes et exécution marketing.</p>
+        </div>
+
+        <div class="skills-filter-tabs">
+          <button class="filter-btn active" data-filter="all">Toutes</button>
+          <button class="filter-btn" data-filter="strategy">Stratégie & Conseil</button>
+          <button class="filter-btn" data-filter="tech">Tech & Vibe Coding</button>
+          <button class="filter-btn" data-filter="content">Contenu & E-Commerce</button>
+          <button class="filter-btn" data-filter="marketing">Marketing & Vente</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1 -->
+          <div class="skill-card glass-panel" data-category="strategy">
+            <div class="skill-header">
+              <div class="skill-icon-wrap"><i class="fa-solid fa-chess-knight"></i></div>
+              <div class="skill-title-group">
+                <h4>Stratégie & Conseil Digital</h4>
+                <span>Accompagnement 360°</span>
+              </div>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 95%;"></div>
+            </div>
+            <p class="skill-desc">Audit des besoins numériques, définition de roadmap digitale, cadrage de projets web et transformation numérique pour entreprises.</p>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div class="skill-card glass-panel" data-category="tech">
+            <div class="skill-header">
+              <div class="skill-icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="skill-title-group">
+                <h4>Vibe Coding & Conception Web</h4>
+                <span>Prototypage & Création Moderne</span>
+              </div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 92%;"></div>
+            </div>
+            <p class="skill-desc">Création de sites web esthétiques, modernes et fluides (HTML5/CSS3, JavaScript, Web Stacks, IA & Vibe Coding assisté).</p>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div class="skill-card glass-panel" data-category="content">
+            <div class="skill-header">
+              <div class="skill-icon-wrap"><i class="fa-solid fa-file-pen"></i></div>
+              <div class="skill-title-group">
+                <h4>Content Management & SEO</h4>
+                <span>BravoPromo & E-commerce</span>
+              </div>
+              <span class="skill-pct">94%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 94%;"></div>
+            </div>
+            <p class="skill-desc">Rédaction web optimisée pour le référencement naturel (SEO), architecture de contenu e-commerce et copywriting persuasif.</p>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div class="skill-card glass-panel" data-category="content">
+            <div class="skill-header">
+              <div class="skill-icon-wrap"><i class="fa-solid fa-book-bookmark"></i></div>
+              <div class="skill-title-group">
+                <h4>E-Books & Produits Digitaux</h4>
+                <span>Création & Monétisation</span>
+              </div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Conception intégrale d'e-books, guides pratiques, infoproduits, packaging visuel et mise en place de tunnels d'acquisition.</p>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div class="skill-card glass-panel" data-category="marketing">
+            <div class="skill-header">
+              <div class="skill-icon-wrap"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="skill-title-group">
+                <h4>Marketing Terrain & Télécom</h4>
+                <span>3 ans Sonatel Orange</span>
+              </div>
+              <span class="skill-pct">96%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 96%;"></div>
+            </div>
+            <p class="skill-desc">Campagnes d'activation, négociation commerciale, prospection directe et vulgarisation de solutions technologiques complexes.</p>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div class="skill-card glass-panel" data-category="strategy">
+            <div class="skill-header">
+              <div class="skill-icon-wrap"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="skill-title-group">
+                <h4>Chef de Projet & Multimédia</h4>
+                <span>Master Multimédia 2022</span>
+              </div>
+              <span class="skill-pct">93%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 93%;"></div>
+            </div>
+            <p class="skill-desc">Coordination transversale, respect des délais, direction artistique multimédia et pilotage d'équipes pluridisciplinaires.</p>
+          </div>
+        </div>
+
+        <!-- Outils & Technologies Bar -->
+        <div class="tools-showcase glass-panel">
+          <h4 class="tools-title"><i class="fa-solid fa-toolbox"></i> Boîte à Outils & Environnement</h4>
+          <div class="tools-tags-list">
+            <div class="tool-badge"><i class="fa-brands fa-html5"></i> HTML5 / CSS3 Moderne</div>
+            <div class="tool-badge"><i class="fa-brands fa-js"></i> JavaScript ES6+</div>
+            <div class="tool-badge"><i class="fa-solid fa-robot"></i> Vibe Coding & AI Tools</div>
+            <div class="tool-badge"><i class="fa-brands fa-wordpress"></i> CMS & E-Commerce</div>
+            <div class="tool-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO & Analytics</div>
+            <div class="tool-badge"><i class="fa-solid fa-pen-nib"></i> Copywriting & Storytelling</div>
+            <div class="tool-badge"><i class="fa-solid fa-book"></i> Digital Publishing (E-books)</div>
+            <div class="tool-badge"><i class="fa-solid fa-users-gear"></i> Gestion Agile de Projets</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORMATION & DIPLÔMES ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge"><i class="fa-solid fa-graduation-cap"></i> FORMATION ACADÉMIQUE</div>
+          <h2 class="section-title">Diplômes & <span class="gradient-text">Études</span></h2>
+          <p class="section-subtitle">Un parcours universitaire rigoureux et cohérent allant des sciences fondamentales au management multimédia.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Diplôme 1 -->
+          <div class="edu-card glass-panel gold-accent">
+            <div class="edu-year-badge">2022</div>
+            <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="edu-content">
+              <h3>Maîtrise en Multimédia & Communication Digitale</h3>
+              <p class="edu-field">Spécialisation Gestion de Projets Multimédia & Nouvelles Technologies</p>
+              <p class="edu-desc">
+                Approfondissement des stratégies digitales avancées, production de médias interactifs, gestion de projets numériques d'envergure et ingénierie de communication.
+              </p>
+              <div class="edu-pill">Master 1 / Maîtrise Validée</div>
+            </div>
+          </div>
+
+          <!-- Diplôme 2 -->
+          <div class="edu-card glass-panel">
+            <div class="edu-year-badge">2021</div>
+            <div class="edu-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div class="edu-content">
+              <h3>Licence en Communication Digitale</h3>
+              <p class="edu-field">Stratégies de communication web, médias sociaux et création de contenus</p>
+              <p class="edu-desc">
+                Fondations théoriques et pratiques de l'écosystème numérique : marketing digital, ergonomie web, relations publiques en ligne et gestion de communauté.
+              </p>
+              <div class="edu-pill">Licence Complétée</div>
+            </div>
+          </div>
+
+          <!-- Diplôme 3 -->
+          <div class="edu-card glass-panel">
+            <div class="edu-year-badge">2018</div>
+            <div class="edu-icon"><i class="fa-solid fa-atom"></i></div>
+            <div class="edu-content">
+              <h3>Baccalauréat Scientifique (Série S2)</h3>
+              <p class="edu-field">Sciences Expérimentales & Mathématiques</p>
+              <p class="edu-desc">
+                Acquisition d'une solide rigueur de pensée, logique mathématique, raisonnement analytique et méthode de résolution de problèmes complexes.
+              </p>
+              <div class="edu-pill">Diplôme d'État Obtenu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES & OFFRES ==================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge"><i class="fa-solid fa-sparkles"></i> VALEUR AJOUTÉE</div>
+          <h2 class="section-title">Ce Que Je Peux <span class="gradient-text">Faire Pour Vous</span></h2>
+          <p class="section-subtitle">Des prestations sur mesure pensées pour décupler votre chiffre d'affaires et votre autorité digitale.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Conception Web & Vibe Coding</h3>
+            <p>Création de sites web modernes, portfolios ultra-soignés, pages de vente à forte conversion avec un design cinématographique 100% sur mesure.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Sites vitrines & Landing pages</li>
+              <li><i class="fa-solid fa-check"></i> Expérience utilisateur immersive</li>
+              <li><i class="fa-solid fa-check"></i> Optimisation vitesse & mobile</li>
+            </ul>
+          </div>
+
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h3>Conseil & Transformation Digitale</h3>
+            <p>Accompagnement des entreprises pour moderniser leurs processus, digitaliser leur offre et structurer leur communication multicanale.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Audit & Roadmap sur-mesure</li>
+              <li><i class="fa-solid fa-check"></i> Choix des meilleurs outils digitaux</li>
+              <li><i class="fa-solid fa-check"></i> Suivi & Chef de projet dédié</li>
+            </ul>
+          </div>
+
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+            <h3>Création d'E-Books & Infoproduits</h3>
+            <p>De l'idée à la vente : rédaction experte, design premium de la maquette, création de tunnels de distribution et monétisation efficace.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Rédaction & structuration à valeur</li>
+              <li><i class="fa-solid fa-check"></i> Packaging graphique d'exception</li>
+              <li><i class="fa-solid fa-check"></i> Stratégie de mise en marché</li>
+            </ul>
+          </div>
+
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Content Management & SEO E-Commerce</h3>
+            <p>Production de contenus persuasifs inspirés de l'expérience e-commerce (BravoPromo) pour propulser votre référencement Google et vos ventes.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Copywriting orienté conversion</li>
+              <li><i class="fa-solid fa-check"></i> Référencement naturel (SEO) ciblé</li>
+              <li><i class="fa-solid fa-check"></i> Gestion éditoriale continue</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge"><i class="fa-solid fa-envelope-open-text"></i> CONTACT & PROJETS</div>
+          <h2 class="section-title">Donnons Vie À Votre <span class="gradient-text">Prochain Projet</span></h2>
+          <p class="section-subtitle">Vous avez une opportunité, une mission de conseil ou un projet digital à lancer ? Contactez-moi directement.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Carte Coordonnées -->
+          <div class="contact-info-card glass-panel">
+            <div class="info-header">
+              <h3>Coordonnées Directes</h3>
+              <p>Disponible pour des missions freelance, contrats de conseil ou collaborations stratégiques.</p>
+            </div>
+
+            <div class="info-items-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-user-tie"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Nom & Titre</span>
+                  <span class="info-value">Souleymane — Consultant Digital</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Email Professionnel</span>
+                  <span class="info-value clickable" id="emailVal" data-copy="contact.souleymane.digital@gmail.com">contact.souleymane.digital@gmail.com</span>
+                </div>
+                <button class="copy-btn" id="copyEmailBtn" title="Copier l'email"><i class="fa-regular fa-copy"></i></button>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Statut Actuel</span>
+                  <span class="info-value status-open"><span class="mini-pulse"></span> Ouvert aux opportunités</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Modalités de Travail</span>
+                  <span class="info-value">Remote / Présentiel / Hybride</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-strip">
+              <span class="social-title">Mes Réseaux Sociaux :</span>
+              <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-link whatsapp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire de Contact Interactif -->
+          <div class="contact-form-card glass-panel">
+            <h3>Envoyez-moi un message direct</h3>
+            <form id="contactForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName"><i class="fa-regular fa-user"></i> Votre Nom</label>
+                  <input type="text" id="userName" name="name" placeholder="Ex: Jean Dupont" required>
+                </div>
+                <div class="form-group">
+                  <label for="userEmail"><i class="fa-regular fa-envelope"></i> Votre Email</label>
+                  <input type="email" id="userEmail" name="email" placeholder="jean.dupont@entreprise.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectType"><i class="fa-solid fa-list-check"></i> Type de besoin</label>
+                <select id="projectType" name="type">
+                  <option value="conception-web">Conception de Site Web / Vibe Coding</option>
+                  <option value="conseil-digital">Conseil & Transformation Digitale</option>
+                  <option value="content-ecommerce">Content Management & SEO E-commerce</option>
+                  <option value="ebook-produit">Création d'E-book ou Produit Digital</option>
+                  <option value="autre">Autre opportunité / Collaboration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage"><i class="fa-regular fa-message"></i> Détails de votre projet</label>
+                <textarea id="userMessage" name="message" rows="4" placeholder="Décrivez vos objectifs, vos attentes ou vos questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">
+                <span>Envoyer le Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div class="form-feedback" id="formFeedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="logo-symbol small">
+          <span>S</span>
+        </div>
+        <div class="footer-brand-info">
+          <p class="footer-author"><strong>Souleymane</strong> — Consultant Digital & Chef de Projet Web</p>
+          <p class="footer-copy">© 2026 Tous droits réservés. Conçu avec rigueur & <em>Vibe Coding</em> d'exception.</p>
+        </div>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="footer-social-btn whatsapp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">À Propos</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#skills">Compétences</a>
+        <a href="#education">Formation</a>
+        <a href="#top" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Haut</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Action réussie</span>
+  </div>
+
+  <!-- JavaScript Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
